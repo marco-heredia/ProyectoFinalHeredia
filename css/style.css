@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(69, 73, 129);
+}
+
+header h1 {
+    font-family: fantasy;
+    font-style: italic;
+}
+
+header h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: oblique;
+}
+
+.datos {
+    background-color: rgb(179, 176, 26);
+    display: flex;
+    justify-content: center;
+}
+
+.datos form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10px;
+}

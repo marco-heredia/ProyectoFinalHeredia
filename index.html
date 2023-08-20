@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Proyecto js</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-titles">
+            <h1 id="titulo">Tu formulario online</h1>
+            <h2 id="subtitulo">Completame</h2>
+        </div>
+        <ul id="lista-header">
+        </ul>
+    </header>
+    <main>
+        <!-- <div class="contenedor-vj">
+                <ul class="vj">
+                    <li class="Video-juegos">consolas</li>
+                    <li class="Video-juegos">juegos</li>
+                    <li class="Video-juegos">perifericos</li>
+                </ul>
+                <section>
+                    <div class="contenedor">
+                        <p class="contenedores">CONTENEDOR 1</p>
+                        <P class="contenedores">CONTENEDOR 2</P>
+                        <P class="contenedores">CONTENEDOR 3</P>
+                    </div> -->
+        <div class="datos">
+            <form id="form">
+                <label for="casilla-nombre">Nombre y Apellido:</label>
+                <input id="casilla-nombre" type="text" name="casilla-nombre">
+                <label for="casilla-user">Nombre de Usuario:</label>
+                <input id="casilla-user" type="text">
+                <label for="casilla-email">Email:</label>
+                <input id="casilla-email" type="text" name="casilla-email">
+                <label for="casilla-phone-number">Numero Telefonico (opcional):</label>
+                <input id="casilla-phone-number" type="text">
+                <label for="casilla-password">Contraseña:</label>
+                <input id="casilla-password" type="password">
+                <span>
+                    <button id="btn-random-password">Generar Contraseña</button>
+                </span>
+                <!-- <label for="casilla-edad">Edad:</label>
+                        <input id="casilla-edad" type="number">  -->
+                <!-- <label for="casilla-fecha">Fecha del dia:</label>
+                        <input type="date" name="casilla-fecha" id="casilla-fecha"> -->
+                <label for="casilla-mensaje">Escribinos tu mensaje (opcional):</label>
+                <textarea name="casilla-mensaje" id="casilla-mensaje" cols="30" rows="10"></textarea>
+                <span>
+                    <button id="btn-erase">Borrar todo</button>
+                    <button id="alert" type="submit">Enviar</button>
+                </span>
+            </form>
+        </div>
+
+        <!-- </section>
+            </div> -->
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
