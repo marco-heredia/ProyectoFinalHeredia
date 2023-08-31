@@ -1,5 +1,3 @@
-
-
 document.querySelector("#btn-erase").addEventListener("click", borrarTodo)
 function borrarTodo() {
   document.getElementById("casilla-nombre").value = ""

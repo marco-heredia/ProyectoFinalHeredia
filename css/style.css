@@ -18,6 +18,9 @@ font-style: oblique;
     background-color: rgb(179, 176, 26);
     display: flex;
     justify-content: center;
+    height: 100vh;
+    
+    
 }
 
 .datos form {
@@ -25,4 +28,8 @@ font-style: oblique;
     flex-direction: column;
     width: 25%;
     gap: 10px;
+}
+
+.footer-form {
+    background-color: rgb(179, 176, 26);
 }
