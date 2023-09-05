@@ -1,3 +1,4 @@
+//Logica para borrar con el boton "Borrar todo" el contenido de los inputs
 document.querySelector("#btn-erase").addEventListener("click", borrarTodo)
 function borrarTodo() {
   document.getElementById("casilla-nombre").value = ""
@@ -8,6 +9,7 @@ function borrarTodo() {
   document.getElementById("casilla-mensaje").value = ""
 }
 
+//Generar una contraseña aleatorio con el boton "Generar contraseña" y lo muestro por consola
 const passwordAleatorio = document.querySelector("#btn-random-password")
 passwordAleatorio.addEventListener("click", function() {
   const generarPassword = (longitud)=>{
@@ -26,6 +28,8 @@ passwordAleatorio.addEventListener("click", function() {
   console.log(passwordRandom)
 })
 
+
+//Envio el contenido de los inputs "Nombre y apellido" y "Email" a una api externa
 document.querySelector("#form").addEventListener("submit", confirmado)
 function confirmado(e) {
   e.preventDefault()
@@ -44,6 +48,7 @@ function confirmado(e) {
     },
   })
     .then(response => response.json())
+    //Los datos se guardan en jsonplaceholder y muestro por consola la respuesta simulando la base de datos
     .then(data => {
       console.log('Respuesta del servidor:', data);
     })
@@ -52,6 +57,7 @@ function confirmado(e) {
     });
 }
 
+
 const alerta = document.getElementById("alert")
 alerta.addEventListener("click", function () {
   const nombre = document.getElementById("casilla-nombre")
@@ -59,6 +65,7 @@ alerta.addEventListener("click", function () {
   const email = document.getElementById("casilla-email")
   const password = document.getElementById("casilla-password")
 
+  //Array donde se almacenaran los inputs necesarios para validar el formulario
   const inputs = [nombre, usuario, email, password]
   for (const input of inputs) {
     const contenido = input.value.trim()

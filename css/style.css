@@ -11,7 +11,7 @@ header h1 {
 
 header h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-style: oblique;
+    font-style: oblique;
 }
 
 .datos {
@@ -19,8 +19,8 @@ font-style: oblique;
     display: flex;
     justify-content: center;
     height: 100vh;
-    
-    
+
+
 }
 
 .datos form {
@@ -28,8 +28,4 @@ font-style: oblique;
     flex-direction: column;
     width: 25%;
     gap: 10px;
-}
-
-.footer-form {
-    background-color: rgb(179, 176, 26);
 }
