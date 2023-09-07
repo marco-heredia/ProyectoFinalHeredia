@@ -57,6 +57,19 @@ function confirmado(e) {
     });
 }
 
+//Almaceno la informacion en sessionStorage
+const almacenar = document.getElementById("alert")
+almacenar.addEventListener("click", function() {
+  const nombre = document.getElementById("casilla-nombre").value
+  const usuario = document.getElementById("casilla-user").value
+  const email = document.getElementById("casilla-email").value
+  const telefono = document.getElementById("casilla-phone-number").value
+  const password = document.getElementById("casilla-password").value
+  const texto = document.getElementById("casilla-mensaje").value
+
+  const infoPersonal = [nombre, usuario, email, telefono, password, texto]
+  sessionStorage.setItem("Solicitud", infoPersonal.join(" - "))
+})
 
 const alerta = document.getElementById("alert")
 alerta.addEventListener("click", function () {
